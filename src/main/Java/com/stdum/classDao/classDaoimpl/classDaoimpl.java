@@ -1,5 +1,6 @@
 package com.stdum.classDao.classDaoimpl;
 import com.stdum.classDao.*;
+import org.junit.Test;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -7,12 +8,13 @@ import java.util.List;
 
 public class classDaoimpl implements classDao {
     @Override
+    @Test
     public List<String> classSearchdao(String Week,String DS, String SEweek, String Session) {
         List<String> lu = null;
         String driver = "com.mysql.jdbc.Driver";
-        String url = "jdbc:mysql://localhost:3306/course?serverTimezone=UTC";
+        String url = "jdbc:mysql://rm-m5em1s66r6g6h9hh3zo.mysql.rds.aliyuncs.com:330-6/management?serverTimezone=UTC";
         String user = "root";
-        String pwd = "1234";
+        String pwd = "yz1355826760@";
         Connection connection = null;
         ResultSet resultSet = null;
         Statement statement = null;
